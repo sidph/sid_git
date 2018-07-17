@@ -1,0 +1,150 @@
+{
+    "rules": {
+        "name": "default",
+        "children": [
+            "#include:Enable_HTTP2.json",
+            "#include:Compressible_Objects.json",
+            "#include:Cache_extensions.json",
+            "#include:New_Rule.json"
+        ],
+        "behaviors": [
+            {
+                "name": "cpCode",
+                "options": {
+                    "value": {
+                        "id": "${env.cpCode}"
+                    }
+                }
+            },
+            {
+                "name": "allowPost",
+                "options": {
+                    "enabled": true,
+                    "allowWithoutContentLength": false
+                }
+            },
+            {
+                "name": "allowDelete",
+                "options": {
+                    "enabled": true
+                }
+            },
+            {
+                "name": "allowPatch",
+                "options": {
+                    "enabled": true
+                }
+            },
+            {
+                "name": "allowPut",
+                "options": {
+                    "enabled": true
+                }
+            },
+            {
+                "name": "dnsAsyncRefresh",
+                "options": {
+                    "enabled": true,
+                    "timeout": "2h"
+                }
+            },
+            {
+                "name": "origin",
+                "options": {
+                    "cacheKeyHostname": "REQUEST_HOST_HEADER",
+                    "compress": true,
+                    "enableTrueClientIp": true,
+                    "trueClientIpHeader": "True-Client-IP",
+                    "trueClientIpClientSetting": false,
+                    "forwardHostHeader": "CUSTOM",
+                    "customForwardHostHeader": "www.sids-taqueria.com",
+                    "hostname": "${env.originHostname}",
+                    "httpPort": 80,
+                    "originType": "CUSTOMER",
+                    "verificationMode": "PLATFORM_SETTINGS",
+                    "httpsPort": 443,
+                    "originSni": true,
+                    "originCertificate": "",
+                    "ports": "",
+                    "useUniqueCacheKey": false
+                }
+            },
+            {
+                "name": "sureRoute",
+                "options": {
+                    "enabled": true,
+                    "type": "PERFORMANCE",
+                    "testObjectUrl": "${env.sureRouteTestObject}",
+                    "forceSslForward": false,
+                    "enableCustomKey": false,
+                    "raceStatTtl": "86400s",
+                    "toHostStatus": "INCOMING_HH"
+                }
+            },
+            {
+                "name": "frontEndOptimization",
+                "options": {
+                    "enabled": true
+                }
+            },
+            {
+                "name": "realUserMonitoring",
+                "options": {
+                    "enabled": true
+                }
+            },
+            {
+                "name": "edgeScape",
+                "options": {
+                    "enabled": true
+                }
+            },
+            {
+                "name": "tieredDistribution",
+                "options": {
+                    "enabled": true
+                }
+            },
+            {
+                "name": "caching",
+                "options": {
+                    "behavior": "NO_STORE"
+                }
+            },
+            {
+                "name": "cacheKeyQueryParams",
+                "options": {
+                    "behavior": "INCLUDE_ALL_PRESERVE_ORDER"
+                }
+            },
+            {
+                "name": "cacheRedirect",
+                "options": {
+                    "enabled": "false"
+                }
+            },
+            {
+                "name": "cacheError",
+                "options": {
+                    "enabled": true,
+                    "ttl": "10s",
+                    "preserveStale": true
+                }
+            },
+            {
+                "name": "downstreamCache",
+                "options": {
+                    "behavior": "ALLOW",
+                    "allowBehavior": "LESSER",
+                    "sendHeaders": "CACHE_CONTROL_AND_EXPIRES",
+                    "sendPrivate": false
+                }
+            }
+        ],
+        "options": {
+            "is_secure": true
+        },
+        "variables": [],
+        "comments": "The behaviors in the Default Rule apply to all requests for the property hostname(s) unless another rule overrides the Default Rule settings."
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "name": "prod",
+    "propertyName": "prod.Demo12",
+    "propertyId": 456750,
+    "latestVersionInfo": {
+        "propertyVersion": 1,
+        "updatedByUser": "sfje2iizbg6zxz36",
+        "updatedDate": "2018-04-23T17:35:27Z",
+        "productionStatus": "INACTIVE",
+        "stagingStatus": "INACTIVE",
+        "etag": "9bf006ba1c5a77ae0dbf93e543621b4c9564dfe8",
+        "productId": "Dynamic_Site_Del",
+        "ruleFormat": "v2018-02-27"
+    },
+    "suggestedRuleFormat": "v2018-02-27"
+}

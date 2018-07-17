@@ -1,0 +1,16 @@
+{
+    "name": "dev",
+    "propertyName": "dev.Demo12",
+    "propertyId": 456748,
+    "latestVersionInfo": {
+        "propertyVersion": 1,
+        "updatedByUser": "sfje2iizbg6zxz36",
+        "updatedDate": "2018-04-23T17:35:19Z",
+        "productionStatus": "INACTIVE",
+        "stagingStatus": "INACTIVE",
+        "etag": "ccce837ea18c6cb700d155bd0c1a53cd3210968a",
+        "productId": "Dynamic_Site_Del",
+        "ruleFormat": "v2018-02-27"
+    },
+    "suggestedRuleFormat": "v2018-02-27"
+}

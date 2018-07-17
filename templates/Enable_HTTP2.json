@@ -1,0 +1,24 @@
+{
+    "name": "Enable HTTP2",
+    "children": [],
+    "behaviors": [
+        {
+            "name": "http2",
+            "options": {
+                "enabled": ""
+            }
+        }
+    ],
+    "criteria": [
+        {
+            "name": "hostname",
+            "options": {
+                "matchOperator": "IS_ONE_OF",
+                "values": [
+                    "www.sids-taqueria.com"
+                ]
+            }
+        }
+    ],
+    "criteriaMustSatisfy": "all"
+}

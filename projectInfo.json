@@ -1,0 +1,14 @@
+{
+    "productId": "Dynamic_Site_Del",
+    "contractId": "F-G2DPUK",
+    "groupId": 102945,
+    "environments": [
+        "dev",
+        "qa",
+        "prod"
+    ],
+    "edgeGridConfig": {
+        "section": "credentials"
+    },
+    "name": "Demo12"
+}

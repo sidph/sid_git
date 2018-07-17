@@ -1,0 +1,26 @@
+{
+    "name": "New Rule",
+    "children": [],
+    "behaviors": [
+        {
+            "name": "responseCode",
+            "options": {
+                "statusCode": 301
+            }
+        }
+    ],
+    "criteria": [
+        {
+            "name": "contentType",
+            "options": {
+                "matchOperator": "IS_ONE_OF",
+                "values": [
+                    "text/html*"
+                ],
+                "matchWildcard": true,
+                "matchCaseSensitive": false
+            }
+        }
+    ],
+    "criteriaMustSatisfy": "all"
+}

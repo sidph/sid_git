@@ -1,0 +1,16 @@
+{
+    "name": "qa",
+    "propertyName": "qa.Demo12",
+    "propertyId": 456749,
+    "latestVersionInfo": {
+        "propertyVersion": 1,
+        "updatedByUser": "sfje2iizbg6zxz36",
+        "updatedDate": "2018-04-23T17:35:23Z",
+        "productionStatus": "INACTIVE",
+        "stagingStatus": "INACTIVE",
+        "etag": "7307b343923c542ba2082d99aa3f84e8e97272db",
+        "productId": "Dynamic_Site_Del",
+        "ruleFormat": "v2018-02-27"
+    },
+    "suggestedRuleFormat": "v2018-02-27"
+}
